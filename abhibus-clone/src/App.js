@@ -1,10 +1,11 @@
 
 import './App.css';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
+import { Router } from './Pages/Route';
 function App() {
   return (
     <div className="App">
-        <button className='btn btn-primary'>Click me</button>
+        <Router></Router>
     </div>
   );
 }
