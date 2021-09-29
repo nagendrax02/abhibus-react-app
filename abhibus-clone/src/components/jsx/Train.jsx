@@ -1,7 +1,7 @@
 import "../css/Train.css";
 import Carousel from "./Sliderbar";
 // Or for ES2015 module
-import {Header} from "./Header"
+
 
  function Train() {
   return (

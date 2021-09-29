@@ -1,8 +1,8 @@
 import { Link ,useLocation} from "react-router-dom";
 import { useState } from "react";
-import Train from "./Train";
+
 export default function Navbar() {
-  const location=useLocation()
+
  
   const [trainBut, setTrainBut] = useState(["white","black"]);
   const [bButtton, setBButtton] = useState(["red","white"]);
@@ -29,6 +29,7 @@ export default function Navbar() {
           margin: "auto",
           height: "60px",
           marginTop: "80px",
+          marginBottom:"20px"
         }}
       >
         <Link
