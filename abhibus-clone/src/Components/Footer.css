@@ -1,0 +1,12 @@
+.footer-main-div{
+    background-color: rgb(229,229,229);
+}
+.dot{
+    height: 10px;
+    width: 10px;
+    background-color: rgb(198,0,0);
+    border-radius: 50%;
+    display: inline-block;
+    margin-top: 10px;
+    margin-right: 5px;
+}
