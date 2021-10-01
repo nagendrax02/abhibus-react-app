@@ -1,5 +1,5 @@
-import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css";
-import "../css/Footer.css";
+import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import "../Components/Footer.css";
 export const Footer = () => {
   return (
     <>
@@ -184,48 +184,22 @@ export const Footer = () => {
       </div>
    
     </div>
-    <div className='footer-nav'>
-        <div className=''>Opearots</div>
-        <span className='vert-hr'></span>
-        <div className=''>Routes</div>
-        <span className='vert-hr'></span>
-
-        <div className=''>Train Routes</div>
-        <span className='vert-hr'></span>
-
-        <div className=''>Offers</div>
-        <span className='vert-hr'></span>
-
-        <div className=''>Mobile</div>
-        <span className='vert-hr'></span>
-
-        <div className=''>About</div>
-        <span className='vert-hr'></span>
-
-        <div className=''>News</div>
-        <span className='vert-hr'></span>
-
-        <div className=''>Careers</div>
-        <span className='vert-hr'></span>
-
-        <div className=''>Contact</div>
-        <span className='vert-hr'></span>
-
-        <div className=''>Abhibus Community</div>
-        <span className='vert-hr'></span>
-
-        <div className=''>Booking tips</div>
-        <span className='vert-hr'></span>
-
-        <div className=''>FAQs</div>
-        <span className='vert-hr'></span>
-        <div className=''>Terms</div>
-
-        <span className='vert-hr'></span>
-        <div className=''>Privacy</div>
-        <span className='vert-hr'></span>
-
-        <div className=''>Agent Login</div>
+    <div className='row footer-nav'>
+        <div className='col'>Operators</div>
+        <div className='col'>col1</div>
+        <div className='col'>col1</div>
+        <div className='col'>col1</div>
+        <div className='col'>col1</div>
+        <div className='col'>col1</div>
+        <div className='col'>col1</div>
+        <div className='col'>col1</div>
+        <div className='col'>col1</div>
+        <div className='col'>col1</div>
+        <div className='col'>col1</div>
+        <div className='col'>col1</div>
+        <div className='col'>col1</div>
+        <div className='col'>col1</div>
+        <div className='col'>col1</div>
       </div>
     </>
   );
