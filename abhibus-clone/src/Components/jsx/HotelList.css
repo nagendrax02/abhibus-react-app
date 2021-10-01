@@ -1,0 +1,158 @@
+.location-text{
+    text-align: left;
+    display: flex;
+    gap: 10px;
+}
+.main-div{
+    /* border: 1px solid black; */
+    width: 88%;
+    margin: auto;
+}
+.location-text p{
+    color: gray;
+    font-size: 12px;
+    margin-top: 8px;
+}
+.check-in-out-div{
+    display: flex;
+    gap: 5px;
+}
+.check-in-out-div p{
+    background-color: rgb(239,239,239);
+}
+.sort-by-section{
+    background-color: rgb(239,239,239);
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    height: 40px;
+}
+.sort-by-section :nth-child(1){
+    margin-right: 10px;
+    margin-top: 5px;
+}
+.sort-by-section :nth-child(2){
+    margin-right: 40px;
+    height: 28px;
+    margin-top: 5px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+.container-1{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.select-hotel{
+    border:1px solid rgb(233,236,239);
+    width: 20%;
+}
+.hotel-input-name{
+    border-radius: 5px;
+    margin-top: 10px;
+    text-align: center;
+    border: 1px solid gray;
+    margin-bottom: 20px;
+    width: 80%;
+}
+.ind-hotel{
+    border: 1px solid rgb(223,223,223);
+    width: 70%;
+    display: flex;
+    margin-bottom: 10px;
+}
+.room-price{ 
+    text-align: right;
+       margin-left: 210px;
+}   
+.room-price button{
+    background-color: rgb(198,0,1);
+    border: none;
+    padding: 5px;
+    width: 80px;
+    text-align: center;
+    color: white;
+}
+.price{
+    color: rgb(198,0,1);
+    font-weight: 600;
+}
+.hotel-image{
+    height: 180px;
+    width: 250px;
+}
+.hotel-name{
+    font-size: large;
+    font-weight: 600;
+}
+.hotel-location{
+    font-weight: 600;
+    margin-left: 20px;
+}
+.check-in-out{
+    color: rgb(107,107,107);
+}
+.amentity{
+    height: 20px;
+    width: 20px;
+}
+.amentity-div{
+    display: flex;
+    margin-left: 30px;
+}
+.room-booked-for{
+    font-size: small;
+    color: rgb(107,107,107);
+}
+.amentity-div img{
+    margin-left: 10px;
+}
+/* select box css start */
+
+.dropbtn {
+    background-color: rgb(249,249,249);
+    color: rgb(68,68,68);
+    padding: 0px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    width: 272px;
+    border-bottom: 1px solid rgb(223,223,223);
+  }
+  .rupee-svg{
+      height: 20px;
+      width: 20px;
+  }
+ 
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: rgb(249,249,249);
+  }
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {background-color: #ddd}
+  
+  .show {display:block;}
+/* select box css ends */

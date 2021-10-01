@@ -1,11 +1,15 @@
 
-import './App.css';
-import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
-import { Router } from './Pages/Route';
+import "./App.css";
+import Home from "./components/jsx/home";
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import { Checkout } from "./components/jsx/Checkout";
+import { HotelList } from "./components/jsx/HotelList";
 function App() {
   return (
     <div className="App">
-        <Router></Router>
+      {/* <Home /> */}
+    {/* <Checkout></Checkout> */}
+    <HotelList></HotelList>
     </div>
   );
 }

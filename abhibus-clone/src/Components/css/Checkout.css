@@ -1,0 +1,163 @@
+.passenger_details{
+    display: flex;
+    text-align: left;
+}
+.passenger_details h4{
+    margin-left: 50px;
+}
+/* .account-details{
+    color: red;
+    text-align: left;
+} */
+.account-detail-div{
+    border: 1px solid rgb(223,223,223);
+    width: 65%;
+    padding: 20px;
+    margin-left: 20px;
+    text-align: left;
+}
+.irctc-user-id-input{
+    text-align: center;
+    border: none;
+    border-bottom: 1px solid rgb(223,223,223);
+}
+.verify-btn{
+    background-color: rgb(245,118,103);
+    margin-bottom: 10px;
+    border: none;
+    cursor: pointer;
+}
+.cancel-btn{
+    background-color: rgb(245,118,103);
+    align-items: left;
+    border: none;
+    cursor: pointer;
+}
+.inputbox-btn-container{
+    gap: 0px;
+}
+.vertical-dotted-line{
+    border-left:3px dotted rgb(239,239,239) ;
+    height: 80px;
+}
+.vertical-dotted-line p{
+    font-weight: 500;
+    margin-left: 10px;
+}
+.irctc-user-book-btn{
+    margin-left: 50px;
+    border: none;
+    background-color: rgb(245,118,103);
+    cursor: pointer;
+}
+.text-1{
+    color: red;
+    margin-top: 0px;
+    font-size: small;
+}
+.journey-details{
+    width: 20%;
+    border: 1px solid black;
+    margin-left:25px;
+    background-color: rgb(248,248,248);
+}
+.col-2-div{
+    text-align: left;
+}
+.hr-line{
+    width: 260px;
+    margin-right: 50px;
+}
+.train-details-icon{
+    display: flex;
+    gap: 15px;
+}
+.train-details-icon  .num-text{
+    color: gray;
+}
+.train-sampark-kranti{
+    margin-left: 40px;
+    font-weight: 600;
+    margin-top: 0px;
+}
+.train-timing{
+    margin-left: 40px;
+    color: gray;
+}
+.train-status{
+    display: flex;
+}
+.train-status-text{
+    color: green;
+    font-weight: 600;
+}
+.boarding-text{
+    text-align: left;
+    font-weight: 500;
+}
+.boarding-select-box{
+    margin-top: 10px;
+}
+.bnc-train-time{
+    margin-top: 0px;
+    margin-bottom: 20px;
+    color: brown;
+}
+.bnc-detail-div{
+    text-align: left;
+}
+.bnc-detail-div p{
+    font-weight: 600;
+}
+.passenger-details{
+    border: 1px solid rgb(223,223,223);
+    width: 66.2%;
+    padding: 10px;
+    margin-left: 8px;
+    text-align: left;
+    margin-top: 10px;
+}
+.input-1{
+    width: 150px;
+    text-align: center;
+}
+.input-2{
+    width: 50px;
+    text-align: center;
+}
+.gen-select{
+    width: 60px;
+}
+.passenger-detail-input{
+    background-color:rgb(248,248,248);
+    padding: 5px;
+}
+.text-3{
+    text-align: left;
+    margin-left: 15px;
+    font-weight: 700;
+}
+.row-1{
+    display: flex;
+    
+}
+.text-4{
+    color: gray;
+}
+.row-2{
+    display: flex;
+    margin-left: 10px;
+}
+.row-4{
+    border: 1px solid black;
+    width: 66%;
+    margin-left: 10px;
+    margin-top: 10px;
+    padding: 10px;
+}
+.cont-code{
+    background-color: rgb(233,236,239);
+}
+.email-box{
+    margin-right: 10px;
+}

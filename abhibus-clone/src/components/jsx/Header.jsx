@@ -1,9 +1,12 @@
-import { Link } from "react-router-dom"
-import '../Components/Header.css'
-export const CheckOut = () => {
+import { Link,useLocation } from "react-router-dom"
+import '../css/Header.css'
+
+export const Header = () => {
+  
     return (
         <>
-            <div className='header'>
+        <div>
+            <div className='header' style={{marginBottom:"50px"}}>
                  <div className='logo'><Link to='/'><img src='https://static.abhibus.com/img/abhilogos/logo1.png' alt='logo'></img> </Link> </div>
                 <div className='link-item'>
                     <div className='link'> <Link to='/offers'>Offers</Link>  </div>
@@ -22,6 +25,7 @@ export const CheckOut = () => {
 
             </div>
             <hr className='header-hr-line'></hr>
+            </div>
         </>
     )
 }
