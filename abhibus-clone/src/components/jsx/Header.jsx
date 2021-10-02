@@ -20,7 +20,7 @@ export const Header = () => {
                         </Link>
                     </div>
                     
-                    <div>  <button className='loginBtn'> <img src='https://static.abhibus.com/assets/img/prime-user.png'></img>   Login / Register</button></div>
+                    <div> <Link to='/login'> <button className='loginBtn'> <img src='https://static.abhibus.com/assets/img/prime-user.png'></img>   Login / Register</button></Link></div>
                 </div>
 
             </div>
