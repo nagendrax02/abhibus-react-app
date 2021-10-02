@@ -51,9 +51,9 @@ https://flickity.metafizzy.co
   position: absolute;
   background: hsla(0, 0%, 100%, 0.75);
   border: none;
-  color: rgb(224, 61, 61);
-  margin-left: 90%;
-  margin-top: -170px;
+  color: rgb(247, 10, 10);
+  margin-left: 92%;
+  margin-top: -120px;
 }
 
 .flickity-button:hover {
@@ -78,7 +78,7 @@ https://flickity.metafizzy.co
 }
 
 .flickity-button-icon {
-  fill: #333;
+  fill: rgb(211, 0, 0);
 }
 
 /* ---- previous/next buttons ---- */
@@ -153,8 +153,11 @@ https://flickity.metafizzy.co
 }
 .carousel-cell >img{
  height: 200px;
+
 }
 .slider {
-  margin-right: 15px;
+  margin-right: 25px;
   height: 180px;
+  border: 0.09px solid rgb(214, 214, 214);
+  /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.19) */
 }

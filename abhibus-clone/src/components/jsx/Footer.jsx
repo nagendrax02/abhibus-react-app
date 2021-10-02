@@ -2,7 +2,7 @@ import "../../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "../css/Footer.css";
 export const Footer = () => {
   return (
-    <div className="footer-main-div">
+    <div style={{width:"100%"}} className="footer-main-div">
       <div className="footer-div row">
         <div className="col">
           {" "}

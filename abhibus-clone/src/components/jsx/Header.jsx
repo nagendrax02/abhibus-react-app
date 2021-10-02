@@ -2,6 +2,8 @@ import { Link,useLocation } from "react-router-dom"
 import '../css/Header.css'
 
 export const Header = () => {
+    
+
   
     return (
         <>
@@ -24,6 +26,7 @@ export const Header = () => {
                 </div>
 
             </div>
+
             <hr className='header-hr-line'></hr>
             </div>
         </>
