@@ -166,8 +166,8 @@
     scrollbar-width: none;  /* Firefox */
   }
  label{
-      padding-left:10px ;
-      font-size: 17px;
-      margin-top: 16px;
+    padding-left:40px ;
+    font-size: 17px;
+    margin-top: -27px;
 
   }
