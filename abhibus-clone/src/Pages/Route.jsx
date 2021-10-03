@@ -1,41 +1,61 @@
-import { Route, Switch } from "react-router"
-
-import { Offers } from "./Offers"
+import { Route, Switch } from "react-router";
+import { Link, useLocation } from "react-router-dom";
+import { Offers } from "./Offers";
 import { Header } from "../components/jsx/Header";
-import {Footer} from "../components/jsx/Footer"
-import  Home  from "../components/jsx/home"
+import { Footer } from "../components/jsx/Footer";
+import Home from "../components/jsx/home";
 import Train from "../components/jsx/Train";
 import Bus from "../components/jsx/Bus";
 import Navbar from "../components/jsx/Link";
 import Hotel from "../components/jsx/Hotels";
 import Rental from "../components/jsx/Rental";
+import { HotelList } from "../components/jsx/HotelList";
 
-export const  Router = ()=>{
-    return <>
+export const Router = () => {
+  let location = useLocation();
+  var t = "block";
+  if (location.pathname === "/Hotel") {
+    t = "none";
+  }
+  return (
+    <>
       <Header />
-      <Navbar />
+      <Navbar value={t} />
       <Switch>
-    
-        <Route exact path="/"><Bus/></Route>
-        <Route path="/Trains">
-        <Train />
+        <Route exact path="/">
+          <Bus />
         </Route>
-        <Route path="/Hotels"><Hotel/></Route>
-        <Route path="/Rentals"><Rental/> </Route>
-        <Route   path='/offers'> <Offers></Offers></Route>
+        <Route path="/Trains">
+          <Train />
+        </Route>
+        <Route path="/Hotels">
+          <Hotel />
+        </Route>
+        <Route path="/Rentals">
+          <Rental />{" "}
+        </Route>
+        <Route path="/offers">
+          {" "}
+          <Offers></Offers>
+        </Route>
         {/* <Route exact path="/users"></Route>
 
         <Route path="/users/:id"></Route>
         <Route path="/others">This is others page</Route> */}
+        <Route path="/Hotel">
+          {" "}
+          <HotelList></HotelList>
+        </Route>
         <Route>404 page not found</Route>
       </Switch>
-      <Footer/>
-    {/* <Switch>
+      <Footer />
+      {/* <Switch>
         <Route path='/' exact> <Home></Home> </Route>
         <Route>Page not found</Route>
     </Switch> */}
     </>
-}
+  );
+};
 
 // import Train from "../jsx/Train";
 // import Bus from "../jsx/Bus";
@@ -55,7 +75,7 @@ export const  Router = ()=>{
 //       <Header />
 //       <Navbar />
 //       <Switch>
-    
+
 //         <Route exact path="/"><Bus/></Route>
 //         <Route path="/Trains">
 //         <Train />
