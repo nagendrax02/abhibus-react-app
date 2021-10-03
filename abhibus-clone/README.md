@@ -2,14 +2,15 @@
 # Hi, I'm Nagendra! 👋
 
   
-# Myglamm clone
+# abhibus.com clone
 
-Here in this project we have cloned an online e-commerce website called 'Myglamm'.  It's an online web store, selling make up products online.
-Here we have added some Important and basic functionalities and feature's to this project.
-You can find products by their category.
-You can add product to the cart.
-You can apply the promo code and can get discount if it's valid.
-You can make payment using your card and can place the order.
+Here in this project we have cloned an online booking website "abhibus.com".  It's an online hotel,bus,train booking site.
+Here we cloned some important, basic functionalities and feature's to this project.
+You can search for bus to reserve aseat.
+You can search for a train to reserve a seat
+You can search for a hotel to book a room.
+You can find hotels, bus, trains by entering location , source and destination location.
+You can login using your mobile number.
 
 ## Tech Stack
 
@@ -20,7 +21,6 @@ JSX
 
 **Libraries:**
 * React
-
 
 
 **Database:** json-server.
