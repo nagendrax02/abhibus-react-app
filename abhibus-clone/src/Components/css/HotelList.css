@@ -165,9 +165,9 @@
     -ms-overflow-style: none;  /* IE and Edge */
     scrollbar-width: none;  /* Firefox */
   }
- label{
-    padding-left:40px ;
-    font-size: 17px;
-    margin-top: -27px;
+  .select-hotel  label{
+      padding-left:29px ;
+      font-size: 17px;
+      margin-top: -26px;
 
   }

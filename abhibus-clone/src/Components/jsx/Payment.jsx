@@ -31,7 +31,7 @@ function Payment(){
                   <div className="line2"></div>
                   <div className="abhigo"></div>
               </div>
-              <div  style={{textAlign:"left",border:"solid 0.4px black"}}>
+              <div  style={{backgroundColor:"black",textAlign:"left",border:"solid 0.4px black"}}>
               <div style={{width:"950px",}} className="row">
   <div className="col-75">
     <div className="container">
