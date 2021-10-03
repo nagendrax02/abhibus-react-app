@@ -4,7 +4,7 @@
   
 # abhibus.com clone
 
-Here in this project we have cloned an online booking website "abhibus.com".  It's an online hotel,bus,train booking site.
+Here in this project we have cloned an online booking website "abhibus.com".  It's an online hotel, bus, train booking site.
 Here we cloned some important, basic functionalities and feature's to this project.
 You can search for bus to reserve aseat.
 You can search for a train to reserve a seat
