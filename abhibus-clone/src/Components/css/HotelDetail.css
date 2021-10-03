@@ -1,0 +1,56 @@
+.container-1{
+    display: flex;
+    gap: 120px;
+    justify-content: center;
+    width: 90%;
+    margin: auto;
+}
+.name-address h5{
+    text-align: left;
+}
+.location{
+    text-align: left;
+}
+
+.logo{
+    justify-content: right;
+}   
+.logo img{
+    height: 70px;
+    width: 150px;
+    margin-top: 20px;
+}
+.btn-select-room{
+    background-color: rgb(198,0,1);
+    border: none;
+    color: white;
+}
+.detail-room-nav{
+    background-color: rgb(239,239,239);
+    display: flex;
+    margin-top: 20px;
+}
+.detail-room-nav div{
+    margin-left: 20px;
+    padding: 10px;
+}
+.detail-room-nav div:hover{
+    background-color: rgb(175, 33, 33); 
+}
+.detail-room-nav div a:hover{
+    color: white;
+}
+.detail-room-nav a{
+    text-decoration: none;
+    color: rgb(52,58,64);
+}
+.check-in-out{
+    display: flex;
+    gap: 20px;
+}
+.check-in-out :nth-child(1){
+    background-color: rgb(239,239,239);
+}
+.check-in-out :nth-child(2){
+    background-color: rgb(239,239,239);
+}

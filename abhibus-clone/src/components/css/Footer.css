@@ -15,3 +15,17 @@
     margin-top: 10px;
     margin-right: 5px;
 }
+.footer-nav{display: flex;
+    justify-content: center;
+    gap: 18px;
+    background-color: rgb(240,240,240);
+    padding: 20px;
+}
+.footer-nav div{
+    font-size: small;
+
+}
+.vert-hr{
+    height: 20px;
+    border-left: 1px solid rgb(165,165,165);
+}

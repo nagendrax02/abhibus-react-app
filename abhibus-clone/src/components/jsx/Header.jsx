@@ -4,6 +4,7 @@ import "../css/Header.css";
 import Modal from "./firebase";
 import { useState } from "react";
 export const Header = () => {
+
   const [modals, showModal] = useState(false);
   const [auth, showAuth] = useState(false);
    //const [sty, showSty] = useState("block");
@@ -47,6 +48,7 @@ if(display==='none'){
                 <div className="dropdown-content">
                   <Link to="/printBooking">Print Booking</Link>
                   <Link to="/cancelBooking">Cancel Booking</Link>
+
                 </div>
               </Link>
             </div>

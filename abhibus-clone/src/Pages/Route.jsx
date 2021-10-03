@@ -1,4 +1,5 @@
 import { Route, Switch } from "react-router"
+
 import { Offers } from "./Offers"
 import { Header } from "../components/jsx/Header";
 import {Footer} from "../components/jsx/Footer"
@@ -8,6 +9,7 @@ import Bus from "../components/jsx/Bus";
 import Navbar from "../components/jsx/Link";
 import Hotel from "../components/jsx/Hotels";
 import Rental from "../components/jsx/Rental";
+
 export const  Router = ()=>{
     return <>
       <Header />
@@ -30,7 +32,6 @@ export const  Router = ()=>{
       <Footer/>
     {/* <Switch>
         <Route path='/' exact> <Home></Home> </Route>
-       
         <Route>Page not found</Route>
     </Switch> */}
     </>
