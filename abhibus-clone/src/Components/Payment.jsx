@@ -5,7 +5,22 @@ function Payment(){
       <h2 className="booking">Booking Confirmation Details & Payment</h2>
       <div className="outside_box">
           <div>
-              <div></div>
+              <div>
+                  <div className="guest">
+                      <div>
+                          <h4>Continue as Guest</h4>
+                          <p>(Your booking details will be sent to your email address and contact no. )</p>
+                          <input type="text" placeholder="Full Name"/>
+                          <input type="email" placeholder="Email Address"/>
+                          <input type="text" placeholder="Full Name"/>
+
+                      </div>
+                  </div>
+                  <div className="line1"></div>
+                  <span className="or">or</span>
+                  <div className="line2"></div>
+                  <div className="abhigo"></div>
+              </div>
               <div></div>
           </div>
           <div>
