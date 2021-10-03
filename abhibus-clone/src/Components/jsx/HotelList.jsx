@@ -1,93 +1,200 @@
-import { Link } from 'react-router-dom'
-import './HotelList.css'
+import { Link, useLocation } from "react-router-dom";
+import "../css/HotelList.css";
+import axios from "axios";
+import { useEffect, useState } from "react";
+export const HotelList = () => {
+  const search = useLocation().search;
+  const name = new URLSearchParams(search).get("city");
+  const u = new URLSearchParams(search).get("date");
+  const v = new URLSearchParams(search).get("date1");
+  console.log(name, u, v);
+  const [data, setData] = useState([]);
+  useEffect(() => {
+    axios
+      .get(`http://localhost:3004/hotels`)
+      .then(function (res) {
+        setData(res.data);
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
+  }, []);
+  console.log(data);
+  return (
+    <>
+      <div className="main-div" style={{ paddingTop: "60px" }}>
+        <div className="location-text">
+          <h5>Dehradun</h5>
+          <p>215 Hotels found</p>
+        </div>
+        <div className="check-in-out-div">
+          <p>Check-in: {u}</p>
+          <p>Check-out: {v}</p>
+          <span>.1 Room . 1 Adult</span>
+        </div>
+      </div>
+      <div className="sort-by-section">
+        <p>Sort by:</p>
+        <select
+          onInputCapture={(e) => {
+            console.log(e.target.value);
+            let y = e.target.value;
+            axios
+              .get(`http://localhost:3004/hotels?_sort=price&_order=${y}`)
+              .then(function (res) {
+                setData(res.data);
+              })
+              .catch(function (error) {
+                console.log(error);
+              });
+          }}
+        >
+          <option value="dsfsdf">Recomended</option>
+          <option value="asc">Price Low to High</option>
+          <option value="desc">Price High to Low</option>
+        </select>
+      </div>
+      <div style={{ width: "100%", display: "block" }} className="container-1">
+        <div style={{ width: "20%", float: "left" }} className="select-hotel">
+          <input
+            onChange={(e) => {
+              axios
+                .get(`http://localhost:3004/hotels?name=${e.target.value}`)
+                .then(function (res) {
+                  setData(res.data);
+                })
+                .catch(function (error) {
+                  console.log(error);
+                });
+            }}
+            className="hotel-input-name"
+            placeholder="Search by hotel"
+          ></input>
+          {/* drop down checkbox select start */}
+         <div id="input_box" style={{paddingLeft:"40px",width:"100%",backgroundColor:"",textAlign:"left"}}>
+         <div>
+            <input
+              onClick={(e) => {
+                if (e.target.checked) {
+                  alert(e.target.value);
+                }
+              }}
+              type="checkbox"
+              id="coding"
+              name="interest"
+              value="coding"
+            />
+            <label for="coding">Coding</label>
+          </div>
+          <div>
+            <input type="checkbox" id="music" name="interest" value="music" />
+            <label for="music">Music</label>
+          </div>{" "}
+          <div>
+            <input
+              onClick={(e) => {
+                if (e.target.checked) {
+                  alert(e.target.value);
+                }
+              }}
+              type="checkbox"
+              id="coding"
+              name="interest"
+              value="coding"
+            />
+            <label for="coding">Coding</label>
+          </div>
+          <div>
+            <input type="checkbox" id="music" name="interest" value="music" />
+            <label for="music">Music</label>
+          </div>{" "}
+          <div>
+            <input
+              onClick={(e) => {
+                if (e.target.checked) {
+                  alert(e.target.value);
+                }
+              }}
+              type="checkbox"
+              id="coding"
+              name="interest"
+              value="coding"
+            />
+            <label for="coding">Coding</label>
+          </div>
+          <div>
+            <input type="checkbox" id="music" name="interest" value="music" />
+            <label for="music">Music</label>
+          </div>
+         </div>
+          {/* drop down checkbox select ends */}
+        </div>
+        <div
+          className="example"
+          style={{
+            float: "right",
+            display: "block",
+            width: "69%",
+            marginRight: "2%",
+            height: "650px",
+            overflow: "auto",
+          }}
+        >
+          {data.map((e) => {
+            return (
+              <div
+                style={{
+                  display: "block",
+                  width: "100%",
+                  height: "180px",
+                  border: "0.09px solid rgb(214, 214, 214)",
 
-export const HotelList = ()=>{
-    return (
-        <>
-  
-        <div className='main-div'>
-            <div className='location-text'><h5>Dehradun</h5>
-                <p>215 Hotels found</p>
-            </div>
-            <div className='check-in-out-div'>
-                <p>Check-in: Oct 1,2021</p>
-                <p>Check-out: Oct 2, 2021</p>
-                <span>.1 Room . 1 Adult</span>
+                  marginTop: "22px",
+                  paddingRight: "15px",
+                }}
+              >
+                <div style={{ width: "32%", float: "left", height: "100%" }}>
+                  <img className="hotel-image" src={e.images[0]}></img>
                 </div>
+                <div style={{ paddingLeft: "20px", textAlign: "left" }}>
+                  <p style={{ paddingLeft: "20px" }} className="hotel-name">
+                    {e.name}
+                  </p>
+                  <p style={{ paddingLeft: "90px" }} className="hotel-location">
+                    {e.location}{" "}
+                  </p>
+                  <p className="check-in-out">
+                    Check-in : 12:00 PM | Check-out : 11:00 AM
+                  </p>
+                  <div style={{ marginTop: "40px" }} className="amentity-div">
+                    <img
+                      className="amentity"
+                      src="https://www.svgrepo.com/show/274161/wifi.svg"
+                    ></img>
+                    <img
+                      className="amentity"
+                      src="https://www.svgrepo.com/show/133841/food.svg"
+                    ></img>
+                    <img
+                      className="amentity"
+                      src="https://www.svgrepo.com/show/125026/debit-card.svg"
+                    ></img>
+                    <img
+                      className="amentity"
+                      src="https://www.svgrepo.com/show/116198/parking.svg"
+                    ></img>
+                  </div>
+                </div>
+                <div style={{ marginTop: "-90px" }} className="room-price">
+                  <p className="price"> ₹ &nbsp;{e.price}</p>
+                  <button>reserve</button>
+                  <p className="room-booked-for"> 1 room and 1 night</p>
+                </div>
+              </div>
+            );
+          })}
         </div>
-        <div className='sort-by-section'><p>Sort by:</p>
-            <select>
-                <option value="">Recomended</option>
-                <option value="">Price Low to High</option>
-                <option value="">Price High to Low</option>
-
-            </select>
-        </div>
-        <div className='container-1'>
-            <div className='select-hotel'>
-                <input className='hotel-input-name' placeholder='Search by hotel'></input>
-                
-                {/* drop down checkbox select start */}
-                <div class="dropdown">
-  <button  class="dropbtn">Locality</button>
-  <div id="myDropdown" class="dropdown-content">
-        <Link>link -1</Link>
-        <Link>link -1</Link>
-        <Link>link -1</Link>
-        
-  </div>
-</div>
-        {/* 2 */}
-        <div class="dropdown">
-  <button  class="dropbtn">Price Range</button>
-  <div id="myDropdown" class="dropdown-content">
-  <label for="points">₹ 747 - ₹ 8872</label>
-<input type="range" id="points" name="points" min="747" max="8872"/>
-        
-  </div>
-</div>
-{/* 3 */}
-<div class="dropdown">
-  <button  class="dropbtn">Amenties</button>
-  <div id="myDropdown" class="dropdown-content">
-        <Link>link -1</Link>
-        <Link>link -1</Link>
-        <Link>link -1</Link>
-        
-  </div>
-</div>
- {/* 4 */}
- <div class="dropdown">
-  <button  class="dropbtn">Guest Rating</button>
-  <div id="myDropdown" class="dropdown-content">
-        <Link>link -1</Link>
-        <Link>link -1</Link>
-        <Link>link -1</Link>
-        
-  </div>
-</div>
-                {/* drop down checkbox select ends */}
-            </div>
-            <div className='ind-hotel'>
-                    <div className='hotel-desc'><img className='hotel-image' src='https://images.oyoroomscdn.com/uploads/hotel_image/112419/small/875124747c7f5224.jpg'></img></div>
-                    <div><p className='hotel-name'>SPOT ON 80671 Bakhtawar Guest H</p>
-                        <p className='hotel-location'>Nakraunda, Dehradun, Uttarakhand, Dehradun </p>
-                        <p className='check-in-out'>Check-in : 12:00 PM | Check-out : 11:00 AM</p>
-                        <div className='amentity-div'>
-                            <img className='amentity' src='https://www.svgrepo.com/show/274161/wifi.svg'></img>
-                            <img className='amentity' src='https://www.svgrepo.com/show/133841/food.svg'></img>
-                            <img className='amentity' src='https://www.svgrepo.com/show/125026/debit-card.svg'></img>
-                            <img className='amentity' src='https://www.svgrepo.com/show/116198/parking.svg'></img>
-                            
-                        </div>
-                    </div>
-                    <div className='room-price'>
-                        <p className='price'> ₹ &nbsp;800</p>
-                            <button>reserve</button>
-                            <p className='room-booked-for'> 1 room and 1 night</p>
-                    </div>
-            </div>
-        </div>
-        </>
-    )
-}
+      </div>
+    </>
+  );
+};

@@ -1,7 +1,7 @@
 import { Link ,useLocation} from "react-router-dom";
 import { useState } from "react";
 
-export default function Navbar() {
+export default function Navbar({value}) {
   let location = useLocation();
   console.log(location.pathname)
   const [trainBut, setTrainBut] = useState(["white","black"]);
@@ -22,7 +22,7 @@ if(location.pathname==="/Rentals"){
 
 
   return (
-    <div>
+    <div style={{display:value}}>
       <p style={{fontFamily:"sans-serif",color:"rgb(71, 71, 71)",fontSize:"25px",paddingTop:"100px"}}>{t}</p>
       <div
         style={{

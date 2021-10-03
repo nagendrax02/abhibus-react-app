@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom'
 import '../css/HotelDetail.css'
+
 export const HotelDetail=()=>{
+
     return(
         <>
             <div className='container-1'>

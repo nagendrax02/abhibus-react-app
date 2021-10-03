@@ -1,32 +1,66 @@
 import "../css/Bus.css";
 import Carousel from "./Sliderbar";
 // Or for ES2015 module
-import {FAQ} from "./FAQ"
+import { Link } from "react-router-dom";
+import { FAQ } from "./FAQ";
+import {useLocation} from "react-router-dom";
+import { useState } from "react";
+
 function Train() {
+  const search = useLocation().search;
+  const name = new URLSearchParams(search).get('name');
+  console.log(name)
+  const [city, SetCity] = useState("");
+
   return (
     <div style={{ backgroundColor: "rgb(249, 249, 249" }}>
       <div>
         <input
           className="t-input_1"
           type="text"
+          required
+          id="input_1"
+          onChange={(e) => {
+            document.getElementById("input_1").style.borderColor="black"
+            SetCity(e.target.value);
+            console.log(city);
+          }}
           name="f"
           placeholder="Search.."
         />
-    
         <input
           className="t-input_3"
-          placeholder="Type Date" 
+          placeholder="Type Date"
           type="date"
+          required
           name="f"
-          
+          id="date"
         />
         <input
           className="t-input_3"
           type="date"
+          required
+          id="date1"
           name="f"
           placeholder="Search.."
-        />
-        <button className="t-input_4">Search </button>
+        />{" "}
+        <button
+          onClick={() => {
+            let u=  document.getElementById("date").value
+            let v=  document.getElementById("date1").value
+            if (city&&u&&v) {
+            
+          //  console.log(u,v)
+              window.location.href = `/Hotel?city=${city}&date=${u}&date1=${v}`;
+            }else{
+              document.getElementById("input_1").style.borderColor="red"
+            }
+          }}
+          className="t-input_4"
+        >
+          {" "}
+          Search
+        </button>
       </div>
 
       <div
@@ -49,9 +83,9 @@ function Train() {
           backgroundColor: "white",
           margin: "auto",
           marginTop: "-60px",
-        //   boxShadow:
-        //     "0 1px 17px 0 rgba(0, 0, 0, 0.1), 0 1px 4px 0 rgba(0, 0, 0, 0.6)",
-        border: "0.09px solid rgb(214, 214, 214)"
+          //   boxShadow:
+          //     "0 1px 17px 0 rgba(0, 0, 0, 0.1), 0 1px 4px 0 rgba(0, 0, 0, 0.6)",
+          border: "0.09px solid rgb(214, 214, 214)",
         }}
       >
         <div>
@@ -80,36 +114,46 @@ function Train() {
           <Carousel />
         </div>
       </div>
-  
+
       <div className="hotal_mid_box">
-          <div className="hotal_mid_box_1">
-              <img className="hotal_mid_box_1_1" src="https://static.abhibus.com/busgallery/popularCities/1519842600_hyd.jpg" alt="" />
-              <div className="hotal_mid_box_1_2">
-                  <div className="hotal_mid_box_1_2_1">Price starts at</div>
-                  <div className="hotal_mid_box_1_2_2">660 ₹</div>
-                  <div className="hotal_mid_box_1_2_3">Book Now</div>
-
-              </div>
-          </div>
-          <div className="hotal_mid_box_1">
-          <img className="hotal_mid_box_1_1" src="https://static.abhibus.com/busgallery/popularCities/1519842600_gan.jpg" alt="" />
+        <div className="hotal_mid_box_1">
+          <img
+            className="hotal_mid_box_1_1"
+            src="https://static.abhibus.com/busgallery/popularCities/1519842600_hyd.jpg"
+            alt=""
+          />
           <div className="hotal_mid_box_1_2">
-          <div className="hotal_mid_box_1_2_1">Price starts at</div>
-                  <div className="hotal_mid_box_1_2_2">660 ₹</div>
-                  <div className="hotal_mid_box_1_2_3">Book Now</div>
+            <div className="hotal_mid_box_1_2_1">Price starts at</div>
+            <div className="hotal_mid_box_1_2_2">660 ₹</div>
+            <div className="hotal_mid_box_1_2_3">Book Now</div>
           </div>
-          </div>
-          <div className="hotal_mid_box_1">
-          <img className="hotal_mid_box_1_1" src="https://static.abhibus.com/busgallery/popularCities/1519842600_mum.jpg" alt="" />
+        </div>
+        <div className="hotal_mid_box_1">
+          <img
+            className="hotal_mid_box_1_1"
+            src="https://static.abhibus.com/busgallery/popularCities/1519842600_gan.jpg"
+            alt=""
+          />
           <div className="hotal_mid_box_1_2">
-          <div className="hotal_mid_box_1_2_1">Price starts at</div>
-                  <div className="hotal_mid_box_1_2_2">660 ₹</div>
-                  <div className="hotal_mid_box_1_2_3">Book Now</div>
+            <div className="hotal_mid_box_1_2_1">Price starts at</div>
+            <div className="hotal_mid_box_1_2_2">660 ₹</div>
+            <div className="hotal_mid_box_1_2_3">Book Now</div>
           </div>
+        </div>
+        <div className="hotal_mid_box_1">
+          <img
+            className="hotal_mid_box_1_1"
+            src="https://static.abhibus.com/busgallery/popularCities/1519842600_mum.jpg"
+            alt=""
+          />
+          <div className="hotal_mid_box_1_2">
+            <div className="hotal_mid_box_1_2_1">Price starts at</div>
+            <div className="hotal_mid_box_1_2_2">660 ₹</div>
+            <div className="hotal_mid_box_1_2_3">Book Now</div>
           </div>
-
+        </div>
       </div>
-     
+
       <div className="mid_3_box">
         <p>Book Train e-Tickets with AbhiBus</p>
         <div>
@@ -162,7 +206,7 @@ function Train() {
           />
         </div>
       </div>
-      <FAQ/>
+      <FAQ />
     </div>
   );
 }
