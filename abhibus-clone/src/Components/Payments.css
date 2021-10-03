@@ -163,6 +163,7 @@
   width: 48%;
   /* outline: blue solid; */
   height: 100%;
+  overflow: scroll;
 }
 .abhigo {
   width: 48%;
@@ -198,7 +199,7 @@
 }
 .guest > div {
   width: 90%;
-  height: 90%;
+  height: 76%;
   margin: auto;
   /* outline: sienna solid; */
   margin-top: 8%;
@@ -206,4 +207,50 @@
 .guest input {
   width: 80%;
   margin-top: 5%;
+}
+.checkbox {
+  width: 100%;
+  margin-top: 3%;
+  /* outline: skyblue solid; */
+  padding: 0;
+  margin: 0;
+}
+/* .checkbox input {
+  position: absolute;
+  margin-left: 0;
+  top: 0;
+} */
+.ago {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 30px;
+}
+.light {
+  font-weight: 200;
+}
+.inpi {
+  width: 60%;
+  margin: auto;
+  /* outline: blue solid; */
+}
+.btn_cont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 15%;
+  /* outline: brown solid; */
+  margin-top: 8%;
+}
+.login {
+  padding: 10px 25px;
+  background-color: rgb(220, 52, 68);
+  color: white;
+  border: 1px solid transparent;
+}
+.Signup {
+  padding: 10px 25px;
+  color: black;
+  border: 1px solid black;
+  margin-left: 2%;
 }

@@ -19,7 +19,17 @@ function Payment(){
                   <div className="line1"></div>
                   <span className="or">or</span>
                   <div className="line2"></div>
-                  <div className="abhigo"></div>
+                  <div className="abhigo">
+                      <p className="ago"><span className="light">Abhi</span> book</p>
+                      <p className="ago"><span className="light">Abhi</span> go</p>
+                      <div className="inpi">
+                      Login & get instant discounts and deals by using your abhicash wallet!.
+                      </div>
+                      <div className="btn_cont">
+                          <div className="login">Login</div>
+                          <div className="Signup">Signup</div>
+                      </div>
+                  </div>
               </div>
               <div></div>
           </div>
