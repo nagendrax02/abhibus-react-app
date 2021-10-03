@@ -2,39 +2,40 @@ import { Link ,useLocation} from "react-router-dom";
 import { useState } from "react";
 
 export default function Navbar() {
-
- 
+  let location = useLocation();
+  console.log(location.pathname)
   const [trainBut, setTrainBut] = useState(["white","black"]);
-  const [bButtton, setBButtton] = useState(["red","white"]);
+  const [bButtton, setBButtton] = useState(["#c60001","white"]);
   const [hButtton, setHButtton] = useState(["white","black"]);
   const [rButtton, setRButtton] = useState(["white","black"]);
-  // if(  location.pathname==="/Trains"){
-  //   setTrainBut(["red","white"]);
-  // }  if(  location.pathname===""){
-  //   setBButtton(["red","white"]);
-  // }
-  // if(  location.pathname==="/Train"){
-  //   setTrainBut(["red","white"]);
-  // }
-  // if(  location.pathname==="/Train"){
-  //   setTrainBut(["red","white"]);
-  // }
+  var t='Book Bus Tickets'
+ if(location.pathname==="/Trains"){
+ t="Book IRCTC Train Tickets"
+ 
+ }
+ if(location.pathname==="/Hotels"){
+  t='Book Hotels Online'
+}
+if(location.pathname==="/Rentals"){
+  t='Book Rentals'
+}
 
 
   return (
     <div>
+      <p style={{fontFamily:"sans-serif",color:"rgb(71, 71, 71)",fontSize:"25px",paddingTop:"100px"}}>{t}</p>
       <div
         style={{
           width: "30%",
           margin: "auto",
           height: "60px",
-          marginTop: "80px",
+          marginTop: "60px",
           marginBottom:"20px"
         }}
       >
         <Link
           onClick={() => {
-            setBButtton(["red","white"]);
+            setBButtton(["#c60001","white"]);
             setTrainBut(["white","black"]);
             setHButtton(["white","black"]);
             setRButtton(["white","black"]);
@@ -55,7 +56,7 @@ export default function Navbar() {
         </Link>
         <Link
           onClick={() => {
-            setTrainBut(["red","white"]);
+            setTrainBut(["#c60001","white"]);
             setBButtton(["white","black"]);
             setHButtton(["white","black"]);
             setRButtton(["white","black"]);
@@ -76,7 +77,7 @@ export default function Navbar() {
         </Link>
         <Link
           onClick={() => {
-            setHButtton(["red","white"]);
+            setHButtton(["#c60001","white"]);
             setBButtton(["white","black"]);
             setTrainBut(["white","black"]);
               setRButtton(["white","black"]);
@@ -97,7 +98,7 @@ export default function Navbar() {
         </Link>
         <Link
           onClick={() => {
-            setRButtton(["red","white"]);
+            setRButtton(["#c60001","white"]);
             setBButtton(["white","black"]);
             setTrainBut(["white","black"]);
             setHButtton(["white","black"]);

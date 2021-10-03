@@ -4,13 +4,13 @@ import Flickity from "react-flickity-component";
 
 import "../css/Sliderbar.css";
 const flickityOptions = {
-  autoPlay: true,groupCells: true, imagesLoaded:true ,pageDots:false, 
+  groupCells: true, imagesLoaded:true ,pageDots:false, 
   "contain": true ,asNavFor: ".carousel-main"
 }
 function Carousel() {
   return (
     <div>
-      <div style={{ marginBottom:"50px" }}>
+      <div style={{ }}>
         {" "}
         <Flickity options={flickityOptions}  >
           <img className="slider" src="https://static.abhibus.com/busgallery/offerbanners/Sep2021/27/1632727170/476x220-v2.jpg" alt="" />

@@ -1,45 +1,18 @@
-import "../css/Train.css";
+import "../css/Bus.css";
 import Carousel from "./Sliderbar";
 // Or for ES2015 module
-
 import {FAQ} from "./FAQ"
- function Train() {
+function Train() {
+ 
+
   return (
     <div style={{ backgroundColor: "rgb(249, 249, 249" }}>
-    
-      <div
-        className="container"
-        style={{
-          width: "29%",
-          height: "30px",
-          backgroundColor: "rgb(231, 231, 231)",
-          marginLeft: "80px",
-          position: "relative",
-          textAlign: "left",
-          paddingLeft: "10px",
-          paddingTop: "3px",
-          borderTopLeftRadius:"10px",
-          borderTopRightRadius:"10px"
-        }}
-      >
-        
-    <input type="radio" id="test1" name="radio-group" checked/>
-    <label  style={{paddingRight:"6px"}} for="test1">Book Ticket</label>
-  
-
-    <input type="radio" id="test2" name="radio-group"/>
-    <label  style={{paddingRight:"6px"}} for="test2">Check PNR</label>
-
-
-    <input type="radio" id="test3" name="radio-group"/>
-    <label for="test3">Train Info</label>
-      </div>
       <div>
         <input
           className="t-input_1"
           type="text"
           name="f"
-          placeholder="From"
+          placeholder="Search.."
         />
         <img
           style={{
@@ -55,7 +28,7 @@ import {FAQ} from "./FAQ"
           className="t-input_2"
           type="text"
           name="f"
-          placeholder="To"
+          placeholder="Search.."
         />
         <input
           className="t-input_3"
@@ -68,23 +41,45 @@ import {FAQ} from "./FAQ"
 
       <div
         style={{
-          backgroundImage: `url("https://static.abhibus.com/assets/img/train-seach-bg.png")`,
+          backgroundImage: `url("https://static.abhibus.com/img/abhilogos/bus-seach-bg-new.jpg")`,
           width: "100%",
           height: "500px",
           marginTop: "-260px",
           backgroundColor: "gray",
           backgroundPositionX: "50%",
+        
         }}
       >
         <img style={{}} src="" alt="" />
       </div>
       <div
         style={{
+         
+          paddingTop: "16px",
+          paddingBottom: "15px",
+         width:"97%",
+         backgroundColor: "white",
+         margin:"auto",
+         marginTop:"-60px",
+         boxShadow: "0 1px 17px 0 rgba(0, 0, 0, 0.1), 0 1px 4px 0 rgba(0, 0, 0, 0.6)"
+        }}
+      >
+        <div>
+          <span style={{fontWeight:"bold",fontSize:"25px",textAlign:"left",marginLeft:"-80%",}}>AbhiBus Offers</span>
+          <span></span>
+          <span></span>
+        </div>
+        <div style={{width:"95%",margin:"auto",  backgroundColor: "white",marginTop:"5px"}}> <Carousel /></div>
+       
+      </div>
+
+      <div
+        style={{
           textAlign: "left",
           fontWeight: "bold",
           marginLeft: "24px",
           marginBottom: "7px",
-          marginTop: "-90px",
+          marginTop: "30px",
         }}
       >
         Important Links
@@ -290,8 +285,7 @@ import {FAQ} from "./FAQ"
           />
         </div>
       </div>
-
-      <FAQ />
+      <FAQ/>
     </div>
   );
 }

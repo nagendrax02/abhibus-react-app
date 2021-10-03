@@ -1,5 +1,10 @@
 .footer-main-div{
     background-color: rgb(229,229,229);
+    height: 350px;
+    width: 99.2%;
+    padding-top: 50px;
+    overflow: hidden;
+    margin-top: 50px;
 }
 .dot{
     height: 10px;
