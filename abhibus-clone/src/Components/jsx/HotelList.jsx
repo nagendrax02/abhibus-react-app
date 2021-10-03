@@ -56,6 +56,7 @@ export const HotelList = () => {
       </div>
       <div style={{ width: "100%", display: "block" }} className="container-1">
         <div style={{ width: "20%", float: "left" }} className="select-hotel">
+       
           <input
             onChange={(e) => {
               axios
@@ -73,58 +74,180 @@ export const HotelList = () => {
           {/* drop down checkbox select start */}
          <div id="input_box" style={{paddingLeft:"40px",width:"100%",backgroundColor:"",textAlign:"left"}}>
          <div>
+         {/* "AC": true,
+          "Wifi": true,
+          "Breakfast": true,
+          "Restaurant": true,
+          "Swimming pool": true,
+          "ATM": true,
+          "Card Payment": true,
+          "Gym": true,
+          "Parking": true,
+          "Bar": false,
+          "Banquet hall": false,
+          "Conference room": false,
+          "Gym": false,
+          "Spa": false */}
             <input
               onClick={(e) => {
                 if (e.target.checked) {
-                  alert(e.target.value);
-                }
+                    axios
+                    .get(`http://localhost:3004/hotels?${e.target.value}=true`)
+                    .then(function (res) {
+                      setData(res.data);
+                    })
+                    .catch(function (error) {
+                      console.log(error);
+                    });
+                }else{
+                    axios
+                    .get(`http://localhost:3004/hotels`)
+                    .then(function (res) {
+                      setData(res.data);
+                    })
+                    .catch(function (error) {
+                      console.log(error);
+                    });
+                }console.log(e.target.value)
               }}
               type="checkbox"
-              id="coding"
+              id="Wifi"
               name="interest"
-              value="coding"
+             
             />
-            <label for="coding">Coding</label>
+            <label for="Wifi">Wifi</label>
           </div>
           <div>
-            <input type="checkbox" id="music" name="interest" value="music" />
-            <label for="music">Music</label>
+            <input  onClick={(e) => {
+                if (e.target.checked) {
+                    axios
+                    .get(`http://localhost:3004/hotels?${e.target.value}=true`)
+                    .then(function (res) {
+                      setData(res.data);
+                    })
+                    .catch(function (error) {
+                      console.log(error);
+                    });
+                }else{
+                    axios
+                    .get(`http://localhost:3004/hotels`)
+                    .then(function (res) {
+                      setData(res.data);
+                    })
+                    .catch(function (error) {
+                      console.log(error);
+                    });
+                }console.log(e.target.value)
+              }} type="checkbox" id="Breakfast" name="interest" value="Breakfast" />
+            <label for="Breakfast">Breakfast</label>
           </div>{" "}
           <div>
             <input
               onClick={(e) => {
                 if (e.target.checked) {
-                  alert(e.target.value);
-                }
+                    axios
+                    .get(`http://localhost:3004/hotels?${e.target.value}=true`)
+                    .then(function (res) {
+                      setData(res.data);
+                    })
+                    .catch(function (error) {
+                      console.log(error);
+                    });
+                }else{
+                    axios
+                    .get(`http://localhost:3004/hotels`)
+                    .then(function (res) {
+                      setData(res.data);
+                    })
+                    .catch(function (error) {
+                      console.log(error);
+                    });
+                }console.log(e.target.value)
               }}
               type="checkbox"
               id="coding"
               name="interest"
-              value="coding"
+              value="ATM"
             />
-            <label for="coding">Coding</label>
+            <label for="ATM">ATM</label>
           </div>
           <div>
-            <input type="checkbox" id="music" name="interest" value="music" />
-            <label for="music">Music</label>
+            <input  onClick={(e) => {
+                if (e.target.checked) {
+                    axios
+                    .get(`http://localhost:3004/hotels?${e.target.value}=true`)
+                    .then(function (res) {
+                      setData(res.data);
+                    })
+                    .catch(function (error) {
+                      console.log(error);
+                    });
+                }else{
+                    axios
+                    .get(`http://localhost:3004/hotels`)
+                    .then(function (res) {
+                      setData(res.data);
+                    })
+                    .catch(function (error) {
+                      console.log(error);
+                    });
+                }console.log(e.target.value)
+              }} type="checkbox" id="music" name="interest" value="Spa" />
+            <label for="Spa">Spa</label>
           </div>{" "}
           <div>
             <input
               onClick={(e) => {
                 if (e.target.checked) {
-                  alert(e.target.value);
-                }
+                    axios
+                    .get(`http://localhost:3004/hotels?${e.target.value}=true`)
+                    .then(function (res) {
+                      setData(res.data);
+                    })
+                    .catch(function (error) {
+                      console.log(error);
+                    });
+                }else{
+                    axios
+                    .get(`http://localhost:3004/hotels`)
+                    .then(function (res) {
+                      setData(res.data);
+                    })
+                    .catch(function (error) {
+                      console.log(error);
+                    });
+                }console.log(e.target.value)
               }}
               type="checkbox"
               id="coding"
               name="interest"
-              value="coding"
+              value="Gym"
             />
-            <label for="coding">Coding</label>
+            <label for="Gym">Gym</label>
           </div>
           <div>
-            <input type="checkbox" id="music" name="interest" value="music" />
-            <label for="music">Music</label>
+            <input  onClick={(e) => {
+                if (e.target.checked) {
+                    axios
+                    .get(`http://localhost:3004/hotels?${e.target.value}=true`)
+                    .then(function (res) {
+                      setData(res.data);
+                    })
+                    .catch(function (error) {
+                      console.log(error);
+                    });
+                }else{
+                    axios
+                    .get(`http://localhost:3004/hotels`)
+                    .then(function (res) {
+                      setData(res.data);
+                    })
+                    .catch(function (error) {
+                      console.log(error);
+                    });
+                }console.log(e.target.value)
+              }} type="checkbox" id="music" name="interest" value="Bar" />
+            <label for="Bar">Bar</label>
           </div>
          </div>
           {/* drop down checkbox select ends */}
@@ -136,8 +259,10 @@ export const HotelList = () => {
             display: "block",
             width: "69%",
             marginRight: "2%",
-            height: "650px",
+            marginBottom:"50px",
             overflow: "auto",
+            height: "850px",
+          
           }}
         >
           {data.map((e) => {
@@ -149,7 +274,7 @@ export const HotelList = () => {
                   height: "180px",
                   border: "0.09px solid rgb(214, 214, 214)",
 
-                  marginTop: "22px",
+                  marginBottom: "22px",
                   paddingRight: "15px",
                 }}
               >
@@ -187,7 +312,7 @@ export const HotelList = () => {
                 </div>
                 <div style={{ marginTop: "-90px" }} className="room-price">
                   <p className="price"> ₹ &nbsp;{e.price}</p>
-                  <button>reserve</button>
+                  <Link to={`/Payment/${e.id}`}><button>reserve</button></Link>     
                   <p className="room-booked-for"> 1 room and 1 night</p>
                 </div>
               </div>

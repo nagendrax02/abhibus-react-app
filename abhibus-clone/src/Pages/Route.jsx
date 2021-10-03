@@ -9,14 +9,22 @@ import Bus from "../components/jsx/Bus";
 import Navbar from "../components/jsx/Link";
 import Hotel from "../components/jsx/Hotels";
 import Rental from "../components/jsx/Rental";
+import {Payment} from "../components/jsx/Payment"
 import { HotelList } from "../components/jsx/HotelList";
-
+import Pay from "../components/jsx/payment_successful"
 export const Router = () => {
   let location = useLocation();
   var t = "block";
   if (location.pathname === "/Hotel") {
     t = "none";
   }
+
+  var p=location.pathname.split("/")
+ for(var i=0; i<p.length; i++){
+   if(p[i]==="Payment"){
+    t = "none";
+   }
+ }
   return (
     <>
       <Header />
@@ -46,6 +54,15 @@ export const Router = () => {
           {" "}
           <HotelList></HotelList>
         </Route>
+        <Route path="/Payment">
+          {" "}
+          <Payment/>
+        </Route>
+        <Route path="/paymentSuccessful">
+          {" "}
+          <Pay/>
+        </Route>
+       
         <Route>404 page not found</Route>
       </Switch>
       <Footer />

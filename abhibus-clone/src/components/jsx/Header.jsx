@@ -24,9 +24,9 @@ if(display==='none'){
           className="header"
           style={{ marginBottom: "50px", position: "fixed", width: "100%" }}
         >
-          <div className="logo">
+          <div style={{marginTop:"-40px"}} className="logo">
             <Link to="/">
-              <img
+              <img style={{width:"130px",marginTop:"25px"}}
                 src="https://static.abhibus.com/img/abhilogos/logo1.png"
                 alt="logo"
               ></img>{" "}
