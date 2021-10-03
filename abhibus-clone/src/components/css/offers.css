@@ -1,0 +1,130 @@
+.booking {
+    font-size: 45px;
+    font-weight: 500;
+    margin-left: 2%;
+    margin-top: 6%;
+    width: 100%;
+  }
+  .below_booking {
+    display: flex;
+  
+    width: 98%;
+    height: 650px;
+    border: rgb(192, 192, 192) solid thin;
+    /* margin-left: 14%; */
+    margin: auto;
+    margin-top: 3%;
+  }
+  .bb_1 {
+    width: 40%;
+    /* outline: solid red; */
+    margin-left: 3%;
+    height: 500px;
+  }
+  .Search_b {
+    font-size: 30px;
+    text-align: center;
+    font-weight: 300;
+    color: #232323;
+  }
+  .flexo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 70%;
+    /* outline: solid blue; */
+  }
+  .in1 {
+    padding-left: 70px;
+    margin: 10px;
+    width: 80%;
+    font-size: 25px;
+    background: url("https://static.abhibus.com/img/homeicons/v2/pointer-1.png")
+      no-repeat left center;
+  }
+  .in2 {
+    padding-left: 70px;
+    margin: 10px;
+    width: 80%;
+    font-size: 25px;
+    background: url("https://static.abhibus.com/img/homeicons/v2/pointer-2.png")
+      no-repeat left center;
+  }
+  .in3 {
+    padding-left: 50px;
+    margin: 10px;
+    width: 50%;
+    font-size: 25px;
+    background: url("https://static.abhibus.com/img/homeicons/v2/date.png")
+      no-repeat left center;
+  }
+  .in4 {
+    padding-left: 50px;
+    margin: 10px;
+    width: 50%;
+    font-size: 25px;
+    background: url("https://static.abhibus.com/img/homeicons/v2/date.png")
+      no-repeat left center;
+  }
+  
+  .rightbox {
+    margin-left: 10%;
+    margin-right: 5%;
+    margin-top: 2%;
+    width: 50%;
+    height: 90%;
+    /* outline: brown solid; */
+  }
+  .rightbox > p {
+    font-size: 18px;
+    text-align: justify;
+  }
+  .rightbox > h2 {
+    font-size: 22px;
+    text-align: justify;
+    font-weight: bold;
+    font-family: inherit;
+  }
+  .button {
+    width: 30%;
+    height: 35px;
+    /* border: solid red; */
+    margin: auto;
+    text-align: center;
+    color: white;
+    background-color: rgb(207, 0, 28);
+    font-size: 20px;
+  }
+  .below_search {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    height: 1300px;
+    border: rgb(192, 192, 192) solid thin;
+    margin: auto;
+  }
+  .card1 {
+    height: 350px;
+    width: 30%;
+    border: rgb(232, 230, 230) solid thin;
+    margin: 1%;
+  }
+  .card1 > img {
+    width: 100%;
+  }
+  .card1 > h6 {
+    text-align: center;
+    margin-top: 5%;
+  }
+  .card1 > div {
+    text-align: center;
+    margin-top: 15%;
+    color: #666;
+    font-size: 20px;
+    font-weight: 200;
+    height: 30px;
+  }
+  .hover:hover {
+    background-color: rgb(153, 153, 153);
+    color: white;
+  }

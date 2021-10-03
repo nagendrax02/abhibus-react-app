@@ -31,7 +31,7 @@ function Train() {
 
       <div
         style={{
-          backgroundImage: `url("https://static.abhibus.com/assets/img/hotel-seach-bg.png")`,
+          backgroundImage: `url("https://static.abhibus.com/assets/img/rental-seach-bg.png")`,
           width: "100%",
           height: "500px",
           marginTop: "-260px",

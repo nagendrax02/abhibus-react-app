@@ -9,17 +9,21 @@ export default function Navbar() {
   const [hButtton, setHButtton] = useState(["white","black"]);
   const [rButtton, setRButtton] = useState(["white","black"]);
   var t='Book Bus Tickets'
-if(location.pathname==="/Trains"){
+ if(location.pathname==="/Trains"){
  t="Book IRCTC Train Tickets"
-}
-if(location.pathname==="/Hotels"){
+ 
+ }
+ if(location.pathname==="/Hotels"){
   t='Book Hotels Online'
+}
+if(location.pathname==="/Rentals"){
+  t='Book Rentals'
 }
 
 
   return (
     <div>
-      <p style={{fontFamily:"sans-serif",color:"rgb(71, 71, 71)",fontSize:"25px"}}>{t}</p>
+      <p style={{fontFamily:"sans-serif",color:"rgb(71, 71, 71)",fontSize:"25px",paddingTop:"100px"}}>{t}</p>
       <div
         style={{
           width: "30%",

@@ -1,7 +1,7 @@
 import "../css/Bus.css";
 import Carousel from "./Sliderbar";
 // Or for ES2015 module
-
+import {FAQ} from "./FAQ"
 function Train() {
  
 
@@ -285,6 +285,7 @@ function Train() {
           />
         </div>
       </div>
+      <FAQ/>
     </div>
   );
 }

@@ -2,7 +2,7 @@ import "../css/Train.css";
 import Carousel from "./Sliderbar";
 // Or for ES2015 module
 
-
+import {FAQ} from "./FAQ"
  function Train() {
   return (
     <div style={{ backgroundColor: "rgb(249, 249, 249" }}>
@@ -291,7 +291,7 @@ import Carousel from "./Sliderbar";
         </div>
       </div>
 
-      <Carousel />
+      <FAQ />
     </div>
   );
 }
