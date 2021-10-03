@@ -1,70 +1,85 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Hi, I'm Nagendra! 👋
 
-## Available Scripts
+  
+# abhibus.com clone
 
-In the project directory, you can run:
+Here in this project we have cloned an online booking website "abhibus.com".  It's an online hotel, bus, train booking site.
+Here we cloned some important, basic functionalities and feature's to this project. <br>
+* You can search for bus to reserve a seat. <br>
+* You can search for a train to reserve a seat <br>
+* You can search for a hotel to book a room.<br>
+* You can find hotels, bus, trains by entering location , source and destination location.<br>
+* You can login using your mobile number.<br>
 
-### `npm start`
+## Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+HTML & CSS
+JSX 
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+**Server:** Node JS.
 
-### `npm test`
+**Libraries:**
+* React
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+**Database:** json-server.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+  
+## Run Locally
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Clone the project
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+  git clone https://github.com/nagendrax02/abhibus-react-app.git
+```
 
-### `npm run eject`
+Go to the project directory
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```bash
+  cd my-project
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Run Server 
+```bash
+   npm start
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Install other required dependencies
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+  
+## Screenshots
 
-### Analyzing the Bundle Size
+![Home page](https://user-images.githubusercontent.com/76935781/135754441-f335e4ec-c6fa-4675-860e-aa81b07e8a4b.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+![Offers slider](https://user-images.githubusercontent.com/76935781/135754471-00773034-1181-4e3f-85ac-4a022c155131.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+![Best hotels in top cities](https://user-images.githubusercontent.com/76935781/135754495-75707e0e-280c-4f92-aa4a-6045faf3102d.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+![Hotel booking page](https://user-images.githubusercontent.com/76935781/135754515-b233f58f-8d5c-4006-b81b-87e36c92f186.png)
 
-### Deployment
+![Train booking page](https://user-images.githubusercontent.com/76935781/135754537-b7640a71-0ffc-4893-8b53-a47707d95f9f.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
+![Bus booking page](https://user-images.githubusercontent.com/76935781/135754554-94ebea4a-249e-4253-88d7-30b95c982868.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![Login Page](https://user-images.githubusercontent.com/76935781/135754587-ecceaa23-2273-4569-a9ab-458cda61cb87.png)
+
+![OTP page](https://user-images.githubusercontent.com/76935781/135754603-b7d3f4fe-f665-41e3-b18d-7755525e21a7.png)
+
+
+
+
+
+
+![Offline Stores](https://user-images.githubusercontent.com/76935781/131247204-6b24204b-84e6-4e5e-ab3b-0c71cb2cb116.png)
+
+
+![Payment](https://user-images.githubusercontent.com/76935781/126900122-ba785a04-d432-46f1-ad38-d765072fc1b1.png)
