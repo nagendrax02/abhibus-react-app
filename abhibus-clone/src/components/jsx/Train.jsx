@@ -39,7 +39,7 @@ import Carousel from "./Sliderbar";
           className="t-input_1"
           type="text"
           name="f"
-          placeholder="Search.."
+          placeholder="From"
         />
         <img
           style={{
@@ -55,7 +55,7 @@ import Carousel from "./Sliderbar";
           className="t-input_2"
           type="text"
           name="f"
-          placeholder="Search.."
+          placeholder="To"
         />
         <input
           className="t-input_3"
