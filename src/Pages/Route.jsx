@@ -5,7 +5,7 @@ import { Header } from "../components/jsx/Header";
 import { Footer } from "../components/jsx/Footer";
 import Home from "../components/jsx/home";
 import Train from "../components/jsx/Train";
-import Bus from "../components/jsx/Bus";
+import Bus from "../components/jsx/Bus.jsx";
 import Navbar from "../components/jsx/Link";
 import Hotel from "../components/jsx/Hotels";
 import Rental from "../components/jsx/Rental";
