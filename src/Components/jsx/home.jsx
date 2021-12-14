@@ -1,8 +1,8 @@
-import Train from "../jsx/Train";
-import Bus from "../jsx/Bus";
-import Hotel from "../jsx/Hotels";
+import Train from "./Train";
+import Bus from "./Bus";
+import Hotel from "./Hotels";
 import { Route, Switch } from "react-router-dom";
-import Navbar from "../jsx/Link";
+import Navbar from "./Link";
 import { Header } from "./Header";
 import {Footer} from "./Footer"
 
