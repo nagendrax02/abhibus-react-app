@@ -74,10 +74,3 @@ Install other required dependencies
 
 
 
-
-
-![Offline Stores](https://user-images.githubusercontent.com/76935781/131247204-6b24204b-84e6-4e5e-ab3b-0c71cb2cb116.png)
-
-
-![Payment](https://user-images.githubusercontent.com/76935781/126900122-ba785a04-d432-46f1-ad38-d765072fc1b1.png)
-
